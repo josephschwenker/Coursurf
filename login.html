@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css" th:href="@{public/css/style.css}">
+    <title>Login</title>
+</head>
+    <body class="loginRegisterBody">
+	<header id="titleBar">
+    <nav>
+        <div class="navigationLeft">
+			<a href="index.html">Coursurfer</a>
+            <a href="courses.html">My Courses</a>
+            <a href="#">Shop</a>
+        </div>
+        <div class="navigationRight"></div>
+    </nav>
+	</header>
+    <div class="loginRegisterContainer">
+        <main class="loginRegister">
+            <h1>Login</h1>
+            <form class="loginRegisterForm" method="post" action="submit">
+                <input id="username" name="username" type="text" placeholder="Username" autofocus="autofocus" required>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+                <label for="rememberMe">
+                    <input id="rememberMe" type="checkbox">
+                    <span>Remember me</span>
+                </label>
+                <button id="login" type="submit">Log In</button>
+                </input>
+                <a id="forgotPassword" href="#">Forgot password?</a>
+            </form>
+        </main>
+    </div>
+    </body>
+</html>
